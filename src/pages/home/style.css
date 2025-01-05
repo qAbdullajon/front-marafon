@@ -1,0 +1,7 @@
+.ant-select-selector {
+  border: 0 !important;
+}
+.ant-select-selector:focus {
+  box-shadow: none !important;
+  border: 0 !important;
+}

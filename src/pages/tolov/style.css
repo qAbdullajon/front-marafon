@@ -1,0 +1,10 @@
+.ant-upload {
+  width: 100%;
+}
+.ant-upload button {
+  border: 1px dashed #000;
+}
+.ant-upload button:hover {
+  color: black !important;
+  border: 1px dashed #000 !important;
+}
