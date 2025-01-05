@@ -7,7 +7,7 @@ const Yakunlash = ({ user }: any) => {
   }
 
   return (
-    <div className="h-screen flex justify-center items-center px-3 bg-black">
+    <div className="h-screen flex justify-center px-3 py-4 bg-black">
       <div className="max-w-[430px] text-white">
         <p className="text-center text-5xl">✅</p>
         <p className="text-center text-[#7F6B3C] text-3xl font-semibold pt-5">

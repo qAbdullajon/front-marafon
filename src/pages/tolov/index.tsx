@@ -131,7 +131,7 @@ const Tolov = ({ user }: any) => {
             <div className="border-[#b4b4b8] rounded-xl border w-full mx-auto p-3">
               <p className="opacity-85">1. Quydagi karta raqamlardan biriga to'lovni amalga oshiring:</p>
               <div className="px-4 py-3 border-[#b4b4b8] rounded-xl border mt-2">
-                <div className="flex justify-between items-center text-lg">
+                <div className="flex justify-between items-center text-[17px]">
                   <p className="uppercase">plastik karta</p>
                   <p>{user?.price}</p>
                 </div>
