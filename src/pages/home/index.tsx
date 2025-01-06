@@ -4,10 +4,13 @@ import "./style.css";
 import axios from "axios";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/bootstrap.css";
 
 const Home = ({ setUser }: any) => {
   const [loading, setLoading] = useState(false);
   const navigate = useNavigate();
+  const [phone, setPhone] = useState("");
 
   const onFinish = async (values: any) => {
     setLoading(true);
@@ -36,7 +39,7 @@ const Home = ({ setUser }: any) => {
 
   return (
     <div className="w-full bg-white flex justify-center bg-gradient-to-r from-[#C58FC0] to-[#7F5698]">
-      <div className="py-8 px-4 max-w-[480px] w-full flex flex-col items-center">
+      <div className="py-8 px-1 min-[400px]:px-4 max-w-[480px] w-full flex flex-col items-center">
         <p className="text-white text-2xl pb-3 uppercase font-medium text-center">
           Marafon ishtirokchilari <br /> uchun maxsus taklif
         </p>
@@ -91,20 +94,37 @@ const Home = ({ setUser }: any) => {
                 size="large"
                 style={{
                   boxShadow: "none",
-                  border: "2px solid #000",
+                  border: "1px solid #000",
                   borderRadius: "0",
                 }}
               />
             </Form.Item>
 
-            <Form.Item label="Telifon raqamingiz" name="phone" rules={[{ required: true, message: "Iltimos telifon raqamingizni kiritings!" }]}>
-              <Input
-                size="large"
-                style={{
-                  border: "2px solid #000",
-                  borderRadius: "0",
+            <Form.Item
+              label="Telifon raqamingiz"
+              name="phone"
+              rules={[
+                { required: true, message: "Iltimos telifon raqamingizni kiriting!" },
+                { min: 10, message: "Iltimos telifon raqamni to'liq yozing" },
+              ]}
+            >
+              <PhoneInput
+                country={"uz"} // Default country
+                value={phone}
+                onChange={(phone) => setPhone(phone)}
+                inputStyle={{
                   boxShadow: "none",
+                  border: "1px solid #000",
+                  borderRadius: "0",
+                  width: "100%", // To ensure it fits well in forms
+                  height: "40px", // Matches the `size="large"` in Input
+                  paddingLeft: "58px", // Space for the country code flag
                 }}
+                buttonStyle={{
+                  border: "1px solid #000", // Matches input border
+                  borderRadius: "0",
+                }}
+                placeholder="Telefon raqamingizni kiriting"
               />
             </Form.Item>
 
@@ -112,7 +132,7 @@ const Home = ({ setUser }: any) => {
               <Select
                 size="large"
                 style={{
-                  border: "2px solid #000",
+                  border: "1px solid #000",
                   boxShadow: "none",
                   borderRadius: "0",
                 }}

@@ -82,7 +82,7 @@ const Tolov = ({ user }: any) => {
 
   return (
     <div className="w-full bg-white flex justify-center bg-gradient-to-r from-[#C58FC0] to-[#7F5698]">
-      <div className="py-8 px-4 max-w-[480px] w-full flex flex-col items-center">
+      <div className="py-8 px-1 min-[400px]:px-4 max-w-[480px] w-full flex flex-col items-center">
         <p className="text-white text-2xl pb-3 uppercase font-medium text-center">
           Marafon ishtirokchilari <br /> uchun maxsus taklif
         </p>
@@ -128,14 +128,14 @@ const Tolov = ({ user }: any) => {
                 </div>
               </div>
             </div>
-            <div className="border-[#b4b4b8] rounded-xl border w-full mx-auto p-3">
+            <div className="border-[#DADADE] rounded-xl border w-full mx-auto p-3">
               <p className="opacity-85">1. Quydagi karta raqamlardan biriga to'lovni amalga oshiring:</p>
-              <div className="px-4 py-3 border-[#b4b4b8] rounded-xl border mt-2">
+              <div className="px-4 py-3 border-[#DADADE] rounded-xl border mt-2">
                 <div className="flex justify-between items-center text-[17px]">
                   <p className="uppercase">plastik karta</p>
                   <p>{user?.price}</p>
                 </div>
-                <div className="h-[1px] bg-[#b4b4b8] my-2"></div>
+                <div className="h-[1px] bg-[#DADADE] my-2"></div>
                 <div className="flex justify-between items-center bg-[#FAFAF9]">
                   <div>
                     <p className="text-xl">5614 6819 1836 7438</p>
@@ -146,12 +146,12 @@ const Tolov = ({ user }: any) => {
                   </div>
                 </div>
               </div>
-              <div className="px-4 py-3 border-[#b4b4b8] rounded-xl border mt-3">
+              <div className="px-4 py-3 border-[#DADADE] rounded-xl border mt-3">
                 <div className="flex justify-between items-center text-lg">
-                  <p className="uppercase">plastik karta</p>
+                  <p className="uppercase">Mastercard</p>
                   <p>{user?.tarif === "Standart" ? "69" : user?.tarif === "Premium" ? "77" : user?.tarif === "Vip" ? "465" : ""}$</p>
                 </div>
-                <div className="h-[0.5px] bg-[#b4b4b8] my-2"></div>
+                <div className="h-[0.5px] bg-[#DADADE] my-2"></div>
                 <div className="flex justify-between items-center bg-[#FAFAF9]">
                   <div>
                     <p className="text-xl">4231 2000 0253 3148</p>
