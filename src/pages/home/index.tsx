@@ -16,7 +16,7 @@ const Home = ({ setUser }: any) => {
     setLoading(true);
     let data = {};
     try {
-      const req = await axios.post("https://marafon-service.onrender.com/api/post", values);
+      const req = await axios.post("https://marafon-service-starter.onrender.com/api/post", values);
       if (values.tarif === "Premium") {
         data = { ...req.data, price: "997,000 so'm" };
       } else if (values.tarif === "Standart") {

@@ -51,7 +51,7 @@ const Tolov = ({ user }: any) => {
       formData.append("id", user._id);
     });
     setUploading(true);
-    fetch("https://marafon-service.onrender.com/api/upload", {
+    fetch("https://marafon-service-starter.onrender.com/api/upload", {
       method: "POST",
       body: formData,
     })
