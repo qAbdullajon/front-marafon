@@ -25,7 +25,7 @@ const Yakunlash = ({ user }: any) => {
           <div className="h-[1px] bg-white my-2"></div>
           <p className="text-lg">Kurs: Rus tili 40 kunda 5.0</p>
           <p className="text-lg">Ism: {user?.name}</p>
-          <p className="text-lg">Telifon: {user?.phone}</p>
+          <p className="text-lg">Telefon: {user?.phone}</p>
           <p className="text-lg">Tarif: {user?.tarif}</p>
           <Button onClick={() => (window.location.href = "https://t.me/+vPzW4cSYS2JlMWY6")} className="mt-2 yakun bg-transparent border border-white rounded-none w-full" size="large" type="primary">
             Bonus kanal

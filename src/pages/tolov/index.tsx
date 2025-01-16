@@ -10,9 +10,9 @@ const Tolov = ({ user }: any) => {
   const [timeLeft, setTimeLeft] = useState(15 * 60);
   const navigate = useNavigate();
 
-  if (!user) {
-    navigate("/");
-  }
+  // if (!user) {
+  //   navigate("/");
+  // }
 
   useEffect(() => {
     const interval = setInterval(() => {

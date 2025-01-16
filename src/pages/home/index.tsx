@@ -19,9 +19,9 @@ const Home = ({ setUser }: any) => {
     try {
       const req = await axios.post("https://marafon-service-starter.onrender.com/api/post", values);
       if (values.tarif === "Premium") {
-        data = { ...req.data, price: "997,000 so'm" };
+        data = { ...req.data, price: "1,497,000 so'm" };
       } else if (values.tarif === "Standart") {
-        data = { ...req.data, price: "897,000 so'm" };
+        data = { ...req.data, price: "1,297,000 so'm" };
       } else if (values.tarif === "Vip") {
         data = { ...req.data, price: "5,997,000 so'm" };
       }
@@ -103,11 +103,11 @@ const Home = ({ setUser }: any) => {
               </Form.Item>
 
               <Form.Item
-                label="Telifon raqamingiz"
+                label="Telefon raqamingiz"
                 name="phone"
                 rules={[
-                  { required: true, message: "Iltimos telifon raqamingizni kiriting!" },
-                  { min: 10, message: "Iltimos telifon raqamni to'liq yozing" },
+                  { required: true, message: "Iltimos telefon raqamingizni kiriting!" },
+                  { min: 10, message: "Iltimos telefon raqamni to'liq yozing" },
                 ]}
               >
                 <PhoneInput
@@ -142,8 +142,8 @@ const Home = ({ setUser }: any) => {
                     borderRadius: "0",
                   }}
                 >
-                  <Option value="Standart">Standart - 897,000 so'm</Option>
-                  <Option value="Premium">Premium - 997,000 so'm</Option>
+                  <Option value="Standart">Standart - 1,297,000 so'm</Option>
+                  <Option value="Premium">Premium - 1,497,000 so'm</Option>
                   <Option value="Vip">Vip - 5,997,000 so'm</Option>
                 </Select>
               </Form.Item>
