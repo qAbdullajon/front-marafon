@@ -150,7 +150,7 @@ const Home = ({ setUser }: any) => {
 
               <Form.Item>
                 <Button loading={loading} size="large" type="primary" htmlType="submit" style={{ borderRadius: "6px", width: "100%", backgroundColor: "#A81FD6", border: "none" }}>
-                  Submit
+                  Davom etish
                 </Button>
               </Form.Item>
             </Form>
