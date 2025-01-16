@@ -175,7 +175,7 @@ const Tolov = ({ user }: any) => {
                 </Upload>
 
                 <Button className="w-full mt-4 hover:" size="large" style={{ backgroundColor: fileList.length !== 0 ? "#A81FD6" : "#eee", border: fileList.length === 0 ? "1px solid #d4d4d4" : "none", color: fileList.length === 1 ? "#fff" : "" }} onClick={handleUpload} disabled={fileList.length === 0} loading={uploading}>
-                  {uploading ? "Uploading" : "Submit"}
+                  {uploading ? "Yuklanmoqda" : "Davom etish"}
                 </Button>
               </div>
             </div>
