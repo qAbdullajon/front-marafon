@@ -15,7 +15,7 @@ const Yakunlash = ({ user }: any) => {
         <p className="text-center text-[#7F6B3C] text-3xl font-semibold pt-5">
           Xaridingiz Muvaffaqiyatli <br /> Yakunlandi
         </p>
-        <p className="text-lg pt-3">Rus tili 40 kunda 5.0 kursi 20-yanvar kuni boshlanadi.</p>
+        <p className="text-lg pt-3">Rus tili 40 kunda 5.0 kursi 24-yanvar kuni boshlanadi.</p>
         <p className="text-lg py-2">Siz bilan operatorlarimiz 48 soat ichida bog'lanishadi.</p>
         <p className="text-lg">Kursda ko'rishguncha.</p>
         <p className="text-lg py-2">Hurmat ila,</p>

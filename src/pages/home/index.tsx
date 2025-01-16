@@ -74,7 +74,7 @@ const Home = ({ setUser }: any) => {
             <div className="px-3 py-4">
               <p className="bg-black text-white text-center text-xl font-bold rounded-lg py-2">Rus tili 40 kunda 5.0</p>
               <p className="text-xl pt-2 pb-3 text-center">
-                <span className="font-semibold">Start: </span> 20-yanvar
+                <span className="font-semibold">Start: </span> 24-yanvar
               </p>
               <p className="text-xl font-semibold text-center">
                 Dilshoda Qurbonova bilan Rus tilini <br className="hidden min-[440px]:block" /> samarali o'rganing
