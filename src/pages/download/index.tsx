@@ -36,6 +36,11 @@ const Download = () => {
       key: "tarif",
     },
     {
+      title: "Image",
+      dataIndex: "image",
+      key: "image",
+    },
+    {
       title: "Created At",
       dataIndex: "createdAt",
       key: "createdAt",
