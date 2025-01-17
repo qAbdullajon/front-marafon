@@ -17,8 +17,8 @@ const Download = () => {
   const columns = [
     {
       title: "ID",
-      dataIndex: "id",
       key: "id",
+      render: (_: any, __: any, i: number) => i + 1,
     },
     {
       title: "Name",
