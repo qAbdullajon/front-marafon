@@ -7,7 +7,7 @@ const Download = () => {
   const getUser = async () => {
     try {
       const users = await axios.get("https://marafon-service-starter.onrender.com/api/get-post");
-      console.log(users);
+      setData(users.data);
     } catch (error) {
       console.log(error);
     }
