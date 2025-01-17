@@ -38,11 +38,7 @@ const Download = () => {
     {
       title: "Image",
       key: "image",
-      render: (text: string, record: any) => (
-        <a href={record.image} target="_blank" rel="noopener noreferrer">
-          {record.image}
-        </a>
-      ),
+      render: (_: any, record: any) => <a href={record?.image}>{record.image}</a>,
     },
     {
       title: "Created At",
