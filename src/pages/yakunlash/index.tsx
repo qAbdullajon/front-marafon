@@ -27,7 +27,7 @@ const Yakunlash = ({ user }: any) => {
           <p className="text-lg">Ism: {user?.name}</p>
           <p className="text-lg">Telefon: {user?.phone}</p>
           <p className="text-lg">Tarif: {user?.tarif}</p>
-          <Button onClick={() => (window.location.href = "https://t.me/+vPzW4cSYS2JlMWY6")} className="mt-2 yakun bg-transparent border border-white rounded-none w-full" size="large" type="primary">
+          <Button onClick={() => (window.location.href = "https://t.me/+7h-Cyt8n89BlMGRi")} className="mt-2 yakun bg-transparent border border-white rounded-none w-full" size="large" type="primary">
             Bonus kanal
           </Button>
         </div>
