@@ -4,11 +4,15 @@ import { useState } from "react";
 
 const Download = () => {
   const [data, setData] = useState([]);
-  const GetUser = async () => {
-    const data = await axios.get("https://marafon-service-starter.onrender.com/api/get-post");
-    console.log(data);
+  const getUser = async () => {
+    try {
+      const users = await axios.get("https://marafon-service-starter.onrender.com/api/get-post");
+      console.log(users);
+    } catch (error) {
+      console.log(error);
+    }
   };
-  GetUser();
+  getUser();
 
   const columns = [
     {
